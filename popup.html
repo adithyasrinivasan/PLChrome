@@ -1,0 +1,74 @@
+
+<!doctype html>
+
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+
+    <title>Pokemon Legends - Ignore</title>
+    <link rel="stylesheet" href="theme/material.min.css">
+    <script src="theme/material.min.js"></script>
+    <link rel="stylesheet" href="theme/font.css">
+    <link href="theme/jquery.cssemoticons.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src = "scripts/jquery-2.2.3.min.js"></script>
+    <script src = "scripts/jquery-ui.js"></script>
+   
+
+    <style>
+    body {
+      min-width:350px;
+      min-height: 300px;
+    }
+  </style>
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+  </head>
+
+  <body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Ignore Users</span>
+      </div>
+      </header>
+  <main class="mdl-layout__content">
+    <div class="page-content">
+        <div style = "padding-left:25px; padding-right:25px; width: 250px;" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input style = "padding-left:25px; padding-right:25px;" class="mdl-textfield__input" type="text" id = 'txtIgnoreUser'>
+          <label  style = "padding-left:25px; padding-right:25px;" class="mdl-textfield__label" for="txtIgnoreUser">Enter an username to ignore</label>
+        </div>
+
+      <div style = "padding-left: 25px;">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id = 'btnIgnoreUser'>Ignore</button>
+        <button  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary" id = 'manageIgnoreList'>Manage Ignore List</button>
+        <br>
+        <p id = 'ignoredMessage'></p>
+      </div>
+     
+    </div>
+  </main>
+</div>
+
+<!-- Colored FAB button -->
+
+    
+  </body>
+ 
+	<script src = "scripts/explore_sharks.js"></script>
+
+  <script src = "scripts/analytics.js"></script>
+
+
+</html>
+
+
+

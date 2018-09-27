@@ -1,0 +1,47 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+
+    <title>Pokemon Legends - Manage Ignore List</title>
+    <link rel="stylesheet" href="theme/material.min.css">
+    <script src="theme/material.min.js"></script>
+    <link rel="stylesheet" href="theme/font.css">
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+  </head>
+
+  <body>
+   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Manage Ignore List</span>
+      </div>
+    </header>
+
+    <main class="mdl-layout__content">
+      <div class="page-content">
+      <br>
+  <center>
+   <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" id = 'tblIgnoredUsers'>
+     <thead><th class="mdl-data-table__cell--non-numeric">Username</th><th class="mdl-data-table__cell--non-numeric">Action</th></thead>
+     <tbody>
+     </tbody>
+   </table>
+   </center>
+  </body>
+  <script src = "scripts/jquery-2.2.3.min.js"></script>
+
+	<script src = "scripts/manage_ignore.js"></script>
+</html>
+
